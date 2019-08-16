@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Regular expressions in JS</title>
+        <body>
+            <script>
+
+                //declare a regex in javascript
+                //let reg = /hello/; // either this way or the below way
+                let reg = new RegExp("hello");
+                let some_str = "this string does contain the word hello in it.";
+
+                //check with regular expression if the word contains in string
+                if (reg.test(some_str)) {
+                    console.log("yes the word exists");
+                }
+
+                //some of the userful regular expressions
+                let myRE1 = /^hello/ //this is to check if the string starts with the word "hello"
+                let myRE2 = /hello$/ //end of the string
+                let myRE3 = /hel+o/ //one or more occurance @ place of plus (hello,helllo,hellllllo)
+                let myRE4 = /hel*o/ //zero or more occurance (hello,helllo,helo)
+                let myRE5 = /hel?o/ //zeor or one (hello,helo)
+                let myRE6 = /hello|something/ //either hello or something
+                let myRE7 = /he..o/ //. -> any single char
+                let myRE8 = /\wello/ //alphanumeric or _    
+                let myRE9 = /\bhello/ //word boundary
+                let myRE10 = /[crdlh]ello/ // [...] range of chars
+
+                other_str = "world this works llo"
+
+                if (myRE8.test(other_str)){
+                    console.log("string is :" +other_str);
+                    console.log("regex is :" +myRE8);
+                    console.log("match!");
+                }else{
+                    console.log("pattern doesnt match the regex");
+                }
+            </script>
+        </body>
+    </head>
+</html>
