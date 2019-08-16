@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Finding patterns in strings</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let a = "h";
+            let b = 20;
+            console.log(a+b) // this would pring 5020
+
+            //check if its a number with "NaN"
+            console.log(isNaN(a+b)); //a string and a number
+
+
+            //Print the uppercase of a string 
+            let str_name = "This is a sample sting name";
+            console.log(str_name); //print the string
+            console.log(str_name.toUpperCase()); //print the uppercase of a string
+            console.log(str_name.length);
+
+            //find the index position of a word in a sting
+            let other_str = "This is a wazy boozie string";
+            let position = other_str.indexOf("boozie"); 
+            console.log("position of the word boozie is :" + position);
+            console.log("position of the word james is :" + other_str.indexOf("james"));
+
+            //select a word from a string using slice
+            let the_str="This is an other string example";
+            console.log(the_str.slice(4,10));
+
+        </script>
+    </body>
+</html>
