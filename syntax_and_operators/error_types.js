@@ -17,7 +17,7 @@ try {
 //Range error
 try {
     let a = 2.12788;
-    console.log(a.toPrecision(223948789237439243943279792)); // onle 1-100 allowed here
+    console.log(a.toPrecision(223)); // only 1-100 allowed here
 } catch (err) {
     handleError(err);
 }
