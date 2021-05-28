@@ -11,4 +11,11 @@ function defaultDemo2(name = 'world', message) {
     console.log(`hello ${name}. ${message}`);
 }
 
-defaultDemo2('john', 'how are u');
+defaultDemo2('john');
+
+
+function defaultDemo3(message, name = 'world') {
+    console.log(`hello ${name}. ${message}`);
+}
+
+defaultDemo3('john');
